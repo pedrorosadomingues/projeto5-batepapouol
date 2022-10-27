@@ -4,6 +4,7 @@
     margin: 0 auto;
 
     background-color: #E5E5E5;
+    
 }
 header {
     display: flex;
@@ -38,14 +39,21 @@ main {
     margin-top: 26px;
 
     background-color: #E5E5E5;
-
+    height: 507px;
     
+}
+.chat {
+    overflow-y: scroll;
+    height: 100%;
 }
 li {
     background-color: grey;
     display: flex;
     align-items: center;
     height: 40px;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+    padding-left: 5px;
 
 }
 footer {
