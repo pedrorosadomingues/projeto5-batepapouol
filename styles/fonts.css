@@ -1,0 +1,38 @@
+.messageTime {
+    color: #AAAAAA;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.messageFrom {
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.sidebar h2 {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;    
+    font-weight: 700;
+}
+
+.participants li, .sidebar p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.initialScreen input {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.initialScreen button {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+} 

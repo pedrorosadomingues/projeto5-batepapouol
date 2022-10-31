@@ -11,15 +11,38 @@
 </head>
 <body>
     <div class="body">
+
+        <div class="initialScreen">
+                <img src="assets/logo.svg" alt="logo">
+
+                <input onkeydown="loginEnter(event)" placeholder="Digite seu nome" class="userName" type="text">
+                <button onclick="userLogin()" class="pointer">Entrar</button>
+        </div>
+        
+        <sidebar onclick="showSidebar()" class="shadowbar hidden pointer">
+               
+        </sidebar>
+
+        <sidebar class="sidebar hidden">
+            <h2>Escolha um contato para enviar mensagem:</h2>
+        <ul  class="participants">
+
+        </ul>
+            <h2>Escolha a visibilidade</h2>
+            <p onclick="messageTypeSend(this,'message')" class="hiddenIconTypeMsg pointer"> <ion-icon name="lock-open"></ion-icon> Público <ion-icon name="checkmark"></ion-icon></p>
+            <p onclick="messageTypeSend(this,'private_message')" class="hiddenIconTypeMsg pointer" > <ion-icon name="lock-closed"></ion-icon> Reservadamente <ion-icon name="checkmark"></ion-icon></p>
+
+        </sidebar>
         <header>
             <div class="header-container">
                 <figure>
                     <img src="assets/logo.svg" alt="logo">
                 </figure>
-                <button>
+                <button onclick="showSidebar()">
                     <ion-icon name="people"></ion-icon>
                 </button>
             </div>
+         
         </header>
         <main class="main-content">
             <ul class="chat">
@@ -28,7 +51,7 @@
         </main>
         <footer>
             <div class="footer-container">
-                <input placeholder="Escreva aqui..." type="text">
+                <input onkeydown="sendEnter(event)" class="text-msg" placeholder="Escreva aqui..." type="text">
                 <button onclick="sendMessage()">
                     <ion-icon name="paper-plane-outline"></ion-icon>
                 </button>
